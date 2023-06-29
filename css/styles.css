@@ -579,8 +579,8 @@ img {
 /**------------- SECTION 5 ----------------------*/
 
 .section-customers {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .title-customers {
@@ -593,13 +593,11 @@ img {
 
 .list-customers {
   display: flex;
-  /* gap: 24px; */
-  gap: 16px;
+  gap: 72px 16px;
   flex-wrap: wrap;
 }
 
 .image-customers {
-  /* width: calc((100% - 120px) / 6); */
   width: calc((100% - 96px) / 2);
   height: 88px;
 }
@@ -624,6 +622,26 @@ img {
 
 .icon-customers {
   fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .list-customers {
+    gap: 72px 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .section-customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .list-customers {
+    gap: 24px;
+  }
+  .image-customers {
+    width: calc((100% - 120px) / 6);
+  }
 }
 
 /**------------------- PORTFOLIO -------------- */
@@ -760,6 +778,7 @@ img {
 .footer-container {
   display: flex;
   align-items: baseline;
+  flex-wrap: wrap;
 }
 
 .container-logo {
@@ -785,6 +804,7 @@ img {
   color: var(--logo-color);
   display: inline-block;
   margin-bottom: 16px;
+  padding-left: 155px;
 }
 .footer-logo span {
   color: var(--background-team-color);
