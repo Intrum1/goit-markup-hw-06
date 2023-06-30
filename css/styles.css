@@ -413,7 +413,6 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-solutions-btn:hover {
-  color: var(--background-color);
   background: var(--background-color);
 }
 .hero-solutions-btn:focus {
@@ -1138,6 +1137,11 @@ img {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 24px 24px 24px;
+}
+@media screen and (max-width: 427px) {
+  .modal {
+    width: calc(100% - 30px);
+  }
 }
 
 .modal-bt {
